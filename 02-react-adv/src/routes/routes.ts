@@ -1,5 +1,5 @@
-import { JSX, lazy, LazyExoticComponent } from "react";
-import NoLazy from "../01-lazyload/pages/NoLazy";
+import { JSX, /*lazy,*/ LazyExoticComponent } from "react";
+// import NoLazy from "../01-lazyload/pages/NoLazy";
 import { ShoppingPage } from "../02-component-patterns/pages/ShoppingPage";
 // import { LazyPage1, LazyPage2, LazyPage3 } from "../01-lazyload/pages";
 
@@ -12,7 +12,7 @@ interface Route {
   Component: LazyExoticComponent<JSXComponent> | JSXComponent,
 }
 
-const LazyLayout = lazy(() => import('../01-lazyload/layout/LazyLayout'));
+// const LazyLayout = lazy(() => import('../01-lazyload/layout/LazyLayout'));
 
 export const routes: Route[] = [
   {
