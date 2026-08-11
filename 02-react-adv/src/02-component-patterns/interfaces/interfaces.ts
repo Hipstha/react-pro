@@ -15,6 +15,11 @@ export interface ProductContextProps {
   increaseBy: ( value: number ) => void;
 }
 
+export interface onChangeArgs {
+  count: number;
+  product: Product;
+}
+
 export interface ProductCardHOCProps {
   ({ children, product }: ProductCardProps): JSX.Element,
   Title:    ( Props: ProductTitleProps) => JSX.Element,
